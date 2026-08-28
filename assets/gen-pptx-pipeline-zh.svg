@@ -1,0 +1,73 @@
+<svg width="680" height="620" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,'PingFang SC','Hiragino Sans GB','Microsoft YaHei'" font-size="14">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#64748B"/>
+</marker>
+</defs>
+
+<!-- legend -->
+<rect x="20" y="14" width="13" height="13" rx="3" fill="#BFDBFE"/>
+<text x="39" y="25" font-size="12.5" fill="#334155">Node &#x4FA7;&#xFF08;&#x9A71;&#x52A8; + &#x62FC;&#x88C5;&#xFF09;</text>
+<rect x="220" y="14" width="13" height="13" rx="3" fill="#99F6E4"/>
+<text x="239" y="25" font-size="12.5" fill="#334155">&#x6D4F;&#x89C8;&#x5668;&#x4FA7;&#xFF08;&#x9875;&#x9762;&#x5185;&#x8FD0;&#x884C;&#xFF09;</text>
+<rect x="440" y="14" width="13" height="13" rx="3" fill="#DDD6FE"/>
+<text x="459" y="25" font-size="12.5" fill="#334155">&#x4E24;&#x79CD;&#x8F93;&#x51FA;&#x6A21;&#x5F0F;</text>
+
+<!-- A -->
+<rect x="120" y="48" width="440" height="48" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+<text x="340" y="68" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">&#x542F;&#x52A8;&#x65E0;&#x5934; Chromium&#xFF0C;&#x6253;&#x5F00; HTTP URL</text>
+<text x="340" y="86" text-anchor="middle" font-size="12" fill="#475569">viewport &#x8BBE;&#x4E3A;&#x5E7B;&#x706F;&#x7247;&#x5C3A;&#x5BF8;</text>
+<line x1="340" y1="96" x2="340" y2="118" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- B -->
+<rect x="120" y="120" width="440" height="48" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+<text x="340" y="140" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">&#x6CE8;&#x5165;&#x6355;&#x83B7;&#x5305; &#x2192; window.__genpptx</text>
+<text x="340" y="158" text-anchor="middle" font-size="12" fill="#475569">page.evaluate() &#x6865;&#x63A5;&#x4E24;&#x4E2A;&#x4E16;&#x754C;</text>
+<line x1="340" y1="168" x2="340" y2="190" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- C -->
+<rect x="120" y="192" width="440" height="48" rx="8" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+<text x="340" y="212" text-anchor="middle" font-size="15" font-weight="500" fill="#134E4A">setup&#xFF1A;&#x85CF;&#x5BFC;&#x822A; / &#x6362;&#x5B57;&#x4F53; / &#x89E3;&#x7F29;&#x653E;</text>
+<text x="340" y="230" text-anchor="middle" font-size="12" fill="#475569">&#x7B49; fonts.ready &#xB7; &#x6536;&#x96C6;&#x6F14;&#x8BB2;&#x8005;&#x5907;&#x6CE8;</text>
+<line x1="340" y1="240" x2="340" y2="262" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- D -->
+<rect x="120" y="264" width="440" height="48" rx="8" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+<text x="340" y="284" text-anchor="middle" font-size="15" font-weight="500" fill="#134E4A">&#x9010;&#x9875;&#xFF1A;showJs &#x7FFB;&#x9875; + &#x7B49;&#x56FE;&#x7247;&#x89E3;&#x7801;</text>
+<text x="340" y="302" text-anchor="middle" font-size="12" fill="#475569">djb2 &#x54C8;&#x5E0C;&#x68C0;&#x6D4B;&#x76F8;&#x90BB;&#x9875;&#x662F;&#x5426;&#x771F;&#x7684;&#x53D8;&#x4E86;</text>
+
+<!-- split -->
+<line x1="340" y1="312" x2="340" y2="330" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="330" x2="490" y2="330" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="330" x2="190" y2="354" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="490" y1="330" x2="490" y2="354" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- E -->
+<rect x="40" y="356" width="300" height="74" rx="8" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+<text x="190" y="382" text-anchor="middle" font-size="15" font-weight="500" fill="#4C1D95">&#x622A;&#x56FE;&#x6A21;&#x5F0F;</text>
+<text x="190" y="402" text-anchor="middle" font-size="12" fill="#475569">page.screenshot() 2&#xD7; &#x2192; &#x6574;&#x9875; PNG</text>
+<text x="190" y="419" text-anchor="middle" font-size="12" fill="#475569">&#x50CF;&#x7D20;&#x7EA7;&#x8FD8;&#x539F;&#xFF0C;&#x4E0D;&#x53EF;&#x7F16;&#x8F91;</text>
+
+<!-- F -->
+<rect x="340" y="356" width="300" height="74" rx="8" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+<text x="490" y="382" text-anchor="middle" font-size="15" font-weight="500" fill="#4C1D95">&#x53EF;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;</text>
+<text x="490" y="402" text-anchor="middle" font-size="12" fill="#475569">&#x904D;&#x5386; DOM &#x2192; &#x5E26;&#x6837;&#x5F0F;&#x7684; JSON &#x6811;</text>
+<text x="490" y="419" text-anchor="middle" font-size="12" fill="#475569">&#x2192; &#x5F62;&#x72B6; / &#x6587;&#x5B57; / &#x56FE;&#x7247;&#x5BF9;&#x8C61;</text>
+
+<!-- merge -->
+<line x1="190" y1="430" x2="190" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="490" y1="430" x2="490" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="450" x2="490" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="340" y1="450" x2="340" y2="470" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- G -->
+<rect x="120" y="472" width="440" height="48" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+<text x="340" y="492" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">PptxGenJS &#x62FC;&#x88C5; &#x2192; &#x5199;&#x51FA; .pptx</text>
+<text x="340" y="510" text-anchor="middle" font-size="12" fill="#475569">px &#xF7; 96 = &#x82F1;&#x5BF8;&#x5B9A;&#x4F4D; &#xB7; px &#xD7; 0.75 = &#x78C5;&#x5B57;&#x53F7;</text>
+<line x1="340" y1="520" x2="340" y2="542" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- H -->
+<rect x="120" y="544" width="440" height="46" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+<text x="340" y="563" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">&#x6821;&#x9A8C; &#x2192; flags + &#x6253;&#x5370; JSON &#x7ED3;&#x679C;</text>
+<text x="340" y="580" text-anchor="middle" font-size="12" fill="#475569">&#x67E5;&#x91CD;&#x9875; / &#x5C3A;&#x5BF8;&#x4E0D;&#x7B26; / &#x7F3A;&#x5907;&#x6CE8;</text>
+</svg>

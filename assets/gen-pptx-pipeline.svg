@@ -1,0 +1,73 @@
+<svg width="680" height="620" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="14">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#64748B"/>
+</marker>
+</defs>
+
+<!-- legend -->
+<rect x="20" y="14" width="13" height="13" rx="3" fill="#BFDBFE"/>
+<text x="39" y="25" font-size="12.5" fill="#334155">Node side (driver + assembler)</text>
+<rect x="240" y="14" width="13" height="13" rx="3" fill="#99F6E4"/>
+<text x="259" y="25" font-size="12.5" fill="#334155">Browser side (runs in-page)</text>
+<rect x="460" y="14" width="13" height="13" rx="3" fill="#DDD6FE"/>
+<text x="479" y="25" font-size="12.5" fill="#334155">Two output modes</text>
+
+<!-- A: launch -->
+<rect x="120" y="48" width="440" height="48" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+<text x="340" y="68" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">Launch headless Chromium, open HTTP URL</text>
+<text x="340" y="86" text-anchor="middle" font-size="12" fill="#475569">Viewport locked to slide dimensions</text>
+<line x1="340" y1="96" x2="340" y2="118" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- B: inject -->
+<rect x="120" y="120" width="440" height="48" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+<text x="340" y="140" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">Inject capture bundle &#x2192; window.__genpptx</text>
+<text x="340" y="158" text-anchor="middle" font-size="12" fill="#475569">page.evaluate() bridges the two worlds</text>
+<line x1="340" y1="168" x2="340" y2="190" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- C: setup -->
+<rect x="120" y="192" width="440" height="48" rx="8" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+<text x="340" y="212" text-anchor="middle" font-size="15" font-weight="500" fill="#134E4A">Setup: hide chrome, swap fonts, undo scaling</text>
+<text x="340" y="230" text-anchor="middle" font-size="12" fill="#475569">Await fonts.ready &#xB7; collect speaker notes</text>
+<line x1="340" y1="240" x2="340" y2="262" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- D: per-slide -->
+<rect x="120" y="264" width="440" height="48" rx="8" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
+<text x="340" y="284" text-anchor="middle" font-size="15" font-weight="500" fill="#134E4A">Per-slide: showJs to navigate + wait for images</text>
+<text x="340" y="302" text-anchor="middle" font-size="12" fill="#475569">djb2 hash detects if consecutive slides are identical</text>
+
+<!-- split -->
+<line x1="340" y1="312" x2="340" y2="330" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="330" x2="490" y2="330" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="330" x2="190" y2="354" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="490" y1="330" x2="490" y2="354" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- E: screenshots mode -->
+<rect x="40" y="356" width="300" height="74" rx="8" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+<text x="190" y="382" text-anchor="middle" font-size="15" font-weight="500" fill="#4C1D95">Screenshot mode</text>
+<text x="190" y="402" text-anchor="middle" font-size="12" fill="#475569">page.screenshot() at 2&#xD7; &#x2192; full-bleed PNG</text>
+<text x="190" y="419" text-anchor="middle" font-size="12" fill="#475569">Pixel-perfect, not editable</text>
+
+<!-- F: editable mode -->
+<rect x="340" y="356" width="300" height="74" rx="8" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+<text x="490" y="382" text-anchor="middle" font-size="15" font-weight="500" fill="#4C1D95">Editable mode</text>
+<text x="490" y="402" text-anchor="middle" font-size="12" fill="#475569">Walk live DOM &#x2192; styled JSON tree</text>
+<text x="490" y="419" text-anchor="middle" font-size="12" fill="#475569">&#x2192; native shapes / text / images</text>
+
+<!-- merge -->
+<line x1="190" y1="430" x2="190" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="490" y1="430" x2="490" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="190" y1="450" x2="490" y2="450" stroke="#64748B" stroke-width="1.5"/>
+<line x1="340" y1="450" x2="340" y2="470" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- G: assemble -->
+<rect x="120" y="472" width="440" height="48" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+<text x="340" y="492" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">PptxGenJS assembles &#x2192; writes .pptx</text>
+<text x="340" y="510" text-anchor="middle" font-size="12" fill="#475569">px &#xF7; 96 = inches positioning &#xB7; px &#xD7; 0.75 = pt font size</text>
+<line x1="340" y1="520" x2="340" y2="542" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+<!-- H: validate -->
+<rect x="120" y="544" width="440" height="46" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+<text x="340" y="563" text-anchor="middle" font-size="15" font-weight="500" fill="#1E3A5F">Validate &#x2192; flags + print JSON result</text>
+<text x="340" y="580" text-anchor="middle" font-size="12" fill="#475569">Duplicate slides / size mismatch / missing notes</text>
+</svg>
